@@ -1,0 +1,67 @@
+.main-block {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+  }
+  .house {
+      position: relative;
+      left: 65px;
+      top: 20px;
+    width: 150px;
+    height: 150px;
+    background: coral;
+  }
+  .roof {
+       position: relative;
+      bottom: 290px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border-left: 110px solid transparent;
+      border-right: 110px solid transparent;
+      border-bottom: 100px solid red;
+  }
+  .chimney {
+      position: relative;
+      bottom: 240px;
+      left: 100px;
+    width: 20px;
+    height: 60px;
+    background: black;
+  }
+  .door {
+     width: 60px;
+      position: relative;
+          top: 210px;
+      left: 150px;
+          z-index: 2;
+    height: 90px;
+    background: brown;
+  }
+  .window {
+      position: relative;
+      top: 100px;
+      left: 100px;
+      z-index: 1;
+     width: 40px;
+    height: 40px;
+    background: cyan;
+  }
+.next p  {
+    margin-left: 80px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px 260px;
+    text-decoration: none; 
+}
+.btns{ 
+  display: inline-block;
+  background-color: #1bbb18;
+  color: #fff;
+  padding: 7px 30px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,113 @@
+*{
+    background-color: rgb(233, 230, 228);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_text{
+    margin-top: 45px;
+}
+/* Відступ між абзацами */
+.about_text p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+/* Про мене оформлення */
+.section_title{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+.about_text h1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.about_text .structure_html{
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.lo {
+    counter-reset: num 4;
+    list-style-type: none;
+  
+  }
+  
+.lo ol li:before {
+    counter-increment: num -1;
+    content: counters(num, ".") " ";
+  }
+  .lists{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.list_one, .list_two, .list_three, .list_four{
+    width: 25%;
+    height: 50vh;
+    padding-left: 40px;
+    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+}
+
+.margin_left_li{
+    margin-left: 35px;
+}
+
+
+.text{
+    width: 51%;
+    height: 100%;
+}
+
+.entitles{
+    text-align: justify;
+}
+
+.ohtml{
+    font-size: 2em;
+}
+.about_text h3{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.title p{
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 140px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.display_none, .display_block, .display_inline, .display_inline-block{
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.none{
+    display: none;
+}
+.block_one, .block_two{
+    border:1px solid blue;
+    width: 50%
+}
+.block_two, .anchor, .span_three{
+    border:1px solid red;
+}
+.span_one{
+    border:1px solid blue;
+    width:50%
+}

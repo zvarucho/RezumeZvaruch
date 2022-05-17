@@ -1,0 +1,37 @@
+a:link, a:hover, a:visited {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 11px;
+    color: #3A681A;
+   }
+   a:active {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #DC0000;
+   }
+   .pole, .pole2 {
+    border: 1px solid #008000;
+    width: 95px;
+    font-size: 11px;
+    background-color: #E7F2D7;
+    height: 17px;
+   }
+   .btns{ 
+    display: inline-block;
+    background-color: #46a720;
+    color: #fff;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.next p  {
+    margin-left: 80px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px 260px;
+    text-decoration: none;
+   
+}

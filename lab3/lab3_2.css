@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana;
+  }
+  h1{
+    color: green;
+  }
+  article header p{
+    background-color: red;
+    color: white;
+  }
+  article figure{
+    width: 600px;
+    border: 3px solid black;
+    padding: 5px;
+  }
+  article figure img{
+    width: 100%;
+  }
+  article{
+    width: 800px;
+  }
+  .btns{ 
+    display: inline-block;
+    background-color: #46a720;
+    color: #fff;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.next p  {
+    margin-left: 80px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 16px;
+    display: inline-block;
+    padding: 20px 260px;
+    text-decoration: none;
+   
+}

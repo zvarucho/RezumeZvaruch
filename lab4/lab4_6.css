@@ -1,0 +1,43 @@
+.zagolovok {
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+}
+.zagolovok span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.zagolovok:before, .zagolovok:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 6px;
+    background-color: black;
+    position: relative;
+}
+.zagolovok:before {
+    margin-left: -105%;
+}
+.zagolovok:after {
+    margin-right: -100%;
+}
+.btns{ 
+    display: inline-block;
+    background-color: #46a720;
+    color: #fff;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.next p  {
+    margin-left: 80px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px 260px;
+    text-decoration: none;
+   
+}

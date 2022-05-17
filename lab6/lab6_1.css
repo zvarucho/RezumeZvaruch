@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.wrraper{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    border: 3px solid lightgray;
+}
+
+.wrraper *{
+    font-family: 'Roboto', sans-serif;
+}
+
+.box{
+    width: 25%;
+    height: 100%;
+    border-right: 3px solid lightgray;
+}
+
+.box:last-child{
+    border-right: none;
+}
+
+.top_block{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display:inline-block;
+}
+
+.top_block p a{
+    color: rgb(119, 119, 119);
+    text-transform: uppercase;
+}
+
+.top_block p{
+    font-size: 1.6em;
+}
+
+.top_block:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right: 5%;
+    width:90%;
+    height:2px;
+    background:lightgray;
+}
+
+.stiker{
+    width: 7vw;
+    height: 14vh;
+    background: #0f8ecd;
+    border: 5px solid white;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: -7vh;
+    cursor: pointer;
+}
+
+.stiker p{
+    position: relative;
+    top: 26%;
+    left: 27%;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stiker p a{
+   color: white;
+   right: 27%;
+   text-align: center;
+}
+
+.top_block p a{
+    position: absolute;
+    top: 45%;
+    right: 36%;
+    text-decoration: none;
+}
+
+.stiker_new{
+    background: #0ed82d;
+}
+
+.stiker_new p{
+    top: 38%;
+    left: 25%;
+}
+
+.midll_block{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.midll_block img{
+    width: 70%;
+    height: 70%;
+}
+
+.midll_block a{
+    font-size: 1.3em;
+    width: 90%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0b91d4;
+    text-transform: uppercase;
+}
+
+.bottom_block{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.bottom_block button{
+    width: 50%;
+    height: 37%;
+    color: rgb(4, 4, 4);
+    font-weight: bold;
+    background: #fbda04;
+    font-size: 1.1em;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.bottom_block button:hover{
+    background: #f6ff00;
+    transition: 0.7s;
+}
+
+.bottom_block button:not(:hover){
+    transition: 0.7s;
+}
+
+.bottom_block span{
+    display: flex;
+    color: rgb(68, 68, 68);
+}
+
+.bottom_block span span, .bottom_block span p{
+    font-size: 1.5em;
+}
+.bottom_block span span:first-child{
+    margin-right: 15px;
+    text-decoration:line-through;
+}
+
+.empty_price{
+    height: 3vh;
+    color: white;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.bottom_block .new{
+    width: 50%;
+    height: 37%;
+    color: white;
+    background: #ff3edf;
+    font-size: 1.1em;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.bottom_block .new:hover{
+    background: #ff1074;
+}
+.wrraper .arrow {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgb(169, 169, 169);
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    color: rgb(182, 180, 180);
+    font-size: 16px;
+    font-weight: bold;
+}
+.wrraper .arrow_left {
+    position: absolute;
+    left: -8%;
+    top: 90px;
+}
+.wrraper .arrow_right {
+    position: absolute;
+    right: -8%;
+    top: 90px;
+}
+.arrow p {
+    position: relative;
+    text-align: center;
+    bottom: -6px;
+}

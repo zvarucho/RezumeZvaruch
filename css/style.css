@@ -1,0 +1,376 @@
+*{
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+} 
+body{
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+body.switchMode{
+    background-color: #000;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.header_head{
+    position: relative;
+    background-color: #191819;
+}
+.head_inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+.head_inner .logo{
+    font-weight: bold;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.head_inner nav ul{
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+   
+}
+.head_inner nav ul li{
+    list-style-type: none;
+}
+.head_inner nav ul li a{
+    font-size: 14px;
+    color: #ccc;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.head_inner nav ul li a:hover {
+    background-color: rgb(155, 142, 142);
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+  
+}
+.head_inner nav ul li.switch a{
+    position: relative;
+     width: 45px;
+     height: 24px;
+     border: 1px solid rgb(237, 11, 11);
+     border-radius: 10em;
+     padding: 0;
+     margin-top: 5px;
+     overflow: hidden;
+}
+.head_inner nav ul li.switch a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10cm;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+body.switchMode .head_inner nav ul li.switch a:after{
+    left: 20px;
+}
+.header_body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;  
+}
+.header_body_inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+}
+/* Текст + зміна кольору 5с*/
+.header_body_inner .left .title{
+    color: #333;
+    font-size: 46px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.header_body_inner .left .title span{
+    color: #f83b3a
+}
+/* Коли змінити тему на чорну, то текст змінить колір на білий */
+body.switchMode .header_body_inner .left .title{
+    color: #fff;
+}
+/* створення і оформлення кнопки "Зв'язатися зі мною" */
+.btn{ 
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f54242;
+    color: rgb(245, 245, 245);
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn:hover{ 
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+}
+.btns{ 
+    display: inline-block;
+    cursor: pointer;
+    background-color: #e83232;
+    color: #fff;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+  .btns  {
+    color: #f8f8f8; /* Колір звичайного посилання */ 
+    text-decoration: none; /* Забираємо підчеркування */
+   }
+   .btns:visited {
+    color: #ffffff; 
+   } 
+   .btns:hover {
+    background-color: rgb(251, 0, 0);
+    color: #000000; /* Колір посилання після наведення*/ 
+    text-decoration: none; /* Добавляємо підчеркування */
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+   }
+.information_me{
+    color:#fff;
+    text-decoration: none;
+    background-color: none;
+}
+.information_me:hover{
+    color:#fff;
+    text-decoration: underline;
+    background-color: none;
+}
+/* завкруглення фото */
+.header_body_inner .right img{
+    border-radius: 10%;
+    width: 370px;
+    border: 4px solid rgb(0, 0, 0);
+}
+body.switchMode .header_body_inner .right img{
+    border-radius: 10%;
+    width: 370px;
+    border: 4px solid rgb(246, 246, 246);
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+}
+/* Текст про мене */
+section{
+    position: relative;
+    padding: 100px 0;
+    width: 100%;
+    height: 100vh;
+}
+/* Про мене оформлення */
+.section_title{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+/* Звернення до  функції щоб змінити текст на білий колір при зміні фону*/
+body.switchMode .section_title{
+    color: #fff;
+}
+/* Відступ  */
+.about_text{
+    margin-top: 45px;
+}
+/* Відступ між абзацами */
+.about_text p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about_text h1{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.about_text h3{
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.type_square ul li {
+    list-style-type: square;
+}
+body.switchMode .type_square{
+    color: #fff;
+}
+.title p{
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 100px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.about_text .ht{
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.about_text .lo{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Зміна коліру тексту при зміні теми */
+body.switchMode .about_text p, body.switchMode .about_text h1, body.switchMode .about_text h3, body.switchMode .lists, body.switchMode .about_text  .lo li{
+    color: #fff;
+}
+/* Форматування(властивості) секції Контакти */
+.contacts_form{
+    position: relative;
+    max-width: 700px;
+    margin: 45px auto;
+    text-align: center;
+}
+.contacts_form form input{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 10px 0 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+.contacts_form form textarea{
+width: 100%;
+font-size: 20px;
+border: 1px solid #333;
+border-radius: 3px;
+padding: 10px 0 30px;
+font-family: 'Montserrat', sans-serif;
+}
+/* Властивості кнопки "Надіслати" */
+.contacts_form form button{
+    background-color: #f83b3a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 100%;
+    font-size: 18px;
+}
+footer{
+    position: relative;
+    padding: 20px 0;
+    background-color: #181918;
+}
+footer p  {
+    font-weight: bold;
+    color: #ccc;
+    font-size: 16px;
+    display: inline-block;
+    padding: 20px 160px;
+    text-decoration: none;
+   
+}
+.wrapper, .wrapper2, .wrapper3, .wrapper4{
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+.progress_line, .progress_line2, .progress_line3, .progress_line4{
+background-color: #797171;
+bottom: 0;
+color: #fff;
+left: 0;
+top: 0;
+position: absolute;
+text-align: center;
+}
+.progress_line-bg, .progress_line-bg2, .progress_line-bg3, .progress_line-bg4{
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.lists{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+.list_one, .list_two, .list_three, .list_four{
+    width: 25%;
+    height: 50vh;
+    padding-left: 40px;
+    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+}
+.margin_left_li{
+    margin-left: 35px;
+}
+.text{
+    width: 51%;
+    height: 100%;
+}
+.entitles{
+    text-align: justify;
+}
+.ohtml{
+    font-size: 2em;
+}
+
+.practical{
+    display: block;
+    float: left;
+}
