@@ -1,0 +1,121 @@
+.main_block_calculator{
+    width: 560px;
+    height: auto;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+}
+.calculator_one{
+    display: block;
+    float: left;
+    border:3px solid #5d9c9e;
+    border-radius: 7px;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.head_calc {
+    margin-top: 10px;
+    height: 40px;
+    width: auto;
+    background-color: #5d9c9e;
+    right: 50%;
+}
+.display{
+    border:3px solid #5d9c9e;
+    border-radius: 7px;
+    width: 230px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    color: #5d9c9e;
+    text-align: end;
+    
+
+}
+
+.text_head_calc{
+    padding: 8px;
+    text-align: end;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.solar_panel{
+    height: 25px;
+    width: 70px;
+    background-color: #5d9c9e;
+    color: #378354;
+    float: right;
+    margin: 10px;
+}
+input[type=button] {
+    width: 45px;
+    height: 45px;
+    margin: 6px;
+    border: 3px solid #5d9c9e;
+    border-radius: 7px;
+    display: inline-block;
+    color: #5d9c9e;
+    transition: all 0.001s;
+    cursor: pointer;
+}
+
+input[type=button]:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 119, 255, 0.2);
+    background-color: #5d9c9e;
+    color: #c3dedf;
+    border: 5px solid #c3dedf;
+}
+
+input[type=button]::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.01s;
+}
+
+input[type=button]:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.calculator_two{
+    display: block;
+    position: relative;
+    left: 50px;
+    border:3px solid #5d9c9e;
+    border-radius: 7px;
+    width: 250px;
+    height: 382px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.head_calc_two {
+    position: relative;
+    top: 0px;
+    height: 40px;
+    width: auto;
+    background-color: #5d9c9e;
+
+}
+.text_head_calc_two {
+    position: relative;
+    top: 20%;
+    left: 61%;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}

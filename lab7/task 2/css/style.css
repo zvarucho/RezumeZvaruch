@@ -1,30 +1,272 @@
-/*
-* Background Images - Practice
-* CSS Styles
-*
-*/
-
-
 /* General */
+.full-wrap{
+	box-shadow: 10px 10px 30px black;
+	width: 1625px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #383838;
+	background-image: url(../img/bg.png);
+	background-attachment: local;
 
+}
+body{
+	background-color: #191919;
+	text-align: center;
+	font-family:'Open Sans',sans-serif;
+}
+.container{
+	overflow: hidden;
+	height: auto;
+	width: 1100px;
+	margin: 0px auto;
 
+}
+h2{	
+	color: white;
+	font-weight: bold;
+	font-size:32px;
+	text-transform: uppercase;
+}
 
 /* Header */
+header{
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: 1625px auto;
+	Background-attachment:local;
+	background-image: url(../img/bg-01.jpg);
+	text-transform: uppercase;
+	display: block;
+	height: 508px;
+	text-align: center;
+ 
+}
+#topbar{
+	width: 100%;
+	height: 67px;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.menu li{
+	float: left;
+	list-style-type: none;
+	width: 100px;
+}
+.menu a{
+	font-size:17px ;
+	display: block;
+	height: 67px;
+	line-height: 4em;
+	text-decoration: none;
+	color: white;
 
+}
+.menu a:hover{
+	background-color: #b91a34;
+}
+.container h1{
+	padding-top: 100px;
+	padding-bottom:70px;
+	color: white;
+	font-family: 'Metal Mania',sans-serif;
+	font-size: 92px;
+}
+.button-header{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 65px;
+	width: 360px;
+	background-image: linear-gradient(320deg,#fe346c, #de0103);
+	text-decoration: none;
+	color: white;
+	line-height:3.5em;
+	font-size: 20px;
 
+}
+.button-header:hover{
+	background-image: linear-gradient(320deg,yellowgreen, blue);
+}
+.button-header:active{
+	background-image: linear-gradient(blue, yellow);
+
+}
 
 /* Tour */
 
+#tour h2{
+	display: block;
+	padding: 50px;
+}
+.tour-card{
+	color: white;
+	line-height: 1.7em;
+	font-weight: 600;
+	text-align: left;
+	padding-top: 46px;
+	padding-left: 12px;
+	margin-right: 32px;
+	float: left;
 
+	width: 238px;
+	height: 219px;
+	box-shadow: 2px 2px 5px black;
+}
+.tour-container{
+	min-height: 410px;
+}
+.tour-town{
+	font-size: 19px;
+	text-transform: uppercase;
+}
+.tour-palce{
+	font-size: 14px;
+}
+.tour-date{
+	font-size: 14px;
+	font-style: italic;
+}
+.madrid{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/tour/madrid.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.krakow{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/tour/krakow.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin-right: 0;
+}
+.turin{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/tour/turin.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.hamburg{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/tour/hamburg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.button{
+	text-transform: uppercase;
+	margin-top: 25px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: 23px;
+	display: block;
+	height: 45px;
+	width: 180px;
+	background-image: linear-gradient(320deg,#fe346c, #de0103);
+	text-decoration: none;
+	color: white;
+	line-height:2em;
+	font-size:20px;
+}
+.button:hover{
+	background-image: linear-gradient(320deg,yellowgreen, blue);
+
+}
+.button:active{
+	background-image: linear-gradient(blue, yellow);
+
+}
 
 /* Gallery */
+#gallery h2{
+	padding-top: 67px;
+	padding-bottom: 55px;
+}
 
 
-
+.photo{
+	box-shadow: 2px 3px 7px black;
+	height: 346px;
+	width: 346px;
+	float: left;
+	display: block;
+	margin:  15px;
+}
+.photo:hover{
+	box-sizing: border-box;
+	border: 2px solid transparent;
+}
+.photo img{
+	height: 346px;
+	width: 346px;
+}
+.container figure:nth-child(3n+1)
+{
+	margin-right: 0px;
+}
+.container figure:nth-child(3n-1)
+{
+	margin-left: 0px;
+}
 /* Subscribe */
+#subscribe{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/bg-02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center ;
+	background-attachment: local; 
+	margin-top: 40px;
+	padding-top: 90px;
+	padding-bottom: 85px;
+}
+.pitch {
+	line-height: 5em;
+}
 
+.pitch p{
+	color: white;
+	font-size: 19px;
+}
+input{
+	display: inline-block;
+	width: 254px;
+	height: 44px;
+	outline: none;
+	font-size: 20px;
 
+}
+button[type='submit']{
+	display: inline-block;
+	width: 160px;
+	border: 1px solid transparent;
+	margin-top: 0px;
+	height: 56px;
+	text-decoration: none;
+	color: white;
+	background-image: linear-gradient(320deg,#fe346c, #de0103);
+	outline: none;
+	text-transform: uppercase;
+	font-size: 20px ;
+}
+button[type='submit']:hover{
+	background-image: linear-gradient(320deg,yellowgreen, blue);
+}
+input:hover{
+	background-color: #b4b4b4;
+}
+button[type='submit']:active{
+	background-image: linear-gradient(blue, yellow);
 
+}
 /* Footer */
-
-
+footer{ 
+	padding:30px 100px;
+	height: 125px;
+	line-height:2.2em;
+}
+.social, .copyright{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+.social{
+	word-spacing: 20px;
+}
+.social i{
+	color: white;
+	word-spacing: 20px;
+}
