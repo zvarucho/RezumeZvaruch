@@ -157,7 +157,7 @@ body.switchMode .header_body_inner .left .title{
 .btns{ 
     display: inline-block;
     cursor: pointer;
-    background-color: #e83232;
+    background-color: #0d9a35;
     color: #fff;
     padding: 7px 30px;
     text-decoration: none;
@@ -173,7 +173,7 @@ body.switchMode .header_body_inner .left .title{
     color: #ffffff; 
    } 
    .btns:hover {
-    background-color: rgb(251, 0, 0);
+    background-color: rgb(84, 251, 0);
     color: #000000; /* Колір посилання після наведення*/ 
     text-decoration: none; /* Добавляємо підчеркування */
     -webkit-transition: all .9s ease;
@@ -327,7 +327,7 @@ footer p  {
     width: 100%;
 }
 .progress_line, .progress_line2, .progress_line3, .progress_line4{
-background-color: #797171;
+background-color: #0da41a;
 bottom: 0;
 color: #fff;
 left: 0;
