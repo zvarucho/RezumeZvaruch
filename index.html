@@ -137,14 +137,20 @@
             </div>
      </section>
       <!--Секція практикум-->
-      <section id="practicum">
+      <section class="section-parcticum"    id="practicum">
         <div class="container">
             <div class="section_title">
                 Практикум
             </div>
             <div class="about_text">
              <h1>Список лабораторних робіт</h1>
-             <div class="container_practicum">
+             <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'First-tab')">HTML/CSS</button>
+                <button class="tablinks" onclick="openTab(event, 'Second-tab')">Java Script</button>
+              </div>
+              
+              <div id="First-tab" class="tabcontent default">
+                <div class="container_practicum">
                     <p><a href="lab2/lab2.html"  target="_blank" class="btns">Лабораторна № 2	&#9989;</a></p>
                     <p><a href="lab3/lab3_1.html"  target="_blank" class="btns">Лабораторна № 3	&#9989;</a></p>
                     <p><a href="lab4/lab4_1.html"  target="_blank" class="btns">Лабораторна № 4 &#9989;</a></p>
@@ -154,8 +160,15 @@
                     <p><a href="lab8/lab8.html" target="_blank" class="btns">Лабораторна № 8 &#9989;</a></p>
                     <p><a href="pr_1/general.html" target="_blank" class="btns">Практича № 1 &#9989;</a></p>
                     <p><a href="pr_2/pr_2.html" target="_blank" class="btns">Практича № 2 &#9989;</a></p>
-            
                 </div>
+              </div>
+              
+              <div id="Second-tab" class="tabcontent">
+                <div class="container_practicum">
+                    <p><a href="JavaScript/Lab1/lab_js1.html"  target="_blank" class="btns">Лабораторна № 1	&#9989;</a></p>
+                    
+                </div>
+              </div>
             </div>
         </div>
 
@@ -284,7 +297,7 @@
                         <input type="text" placeholder="Ваше ім'я">
                         <input type="text" placeholder="Телефон">
                         <textarea name="textarea_name" id="text_area" cols="30" rows="10" placeholder="Ваше повідомлення"></textarea>
-                   <button type="submit" class="btn">Надіслати</button>
+                   <button id="enter" type="submit" class="btn">Надіслати</button>
                     </form>
                   </div>
               </div>
