@@ -218,6 +218,9 @@ section{
     letter-spacing: 2px;
     color: #333;
 }
+.section-parcticum{
+    height: 100%;
+}
 /* Звернення до  функції щоб змінити текст на білий колір при зміні фону*/
 body.switchMode .section_title{
     color: #fff;
@@ -374,3 +377,50 @@ text-align: center;
     display: block;
     float: left;
 }
+/* Стиль вкладок */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Стиль кнопок всередині табів */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Зміна кольору пр наводці */
+  .tab button:hover {
+    background-color: rgb(84, 251, 0);;
+  }
+  
+  /* Активна вкладка */
+  .tab button.active {
+    background-color:   #0d9a35;
+  }
+  .tablinks {
+    color: rgb(0, 0, 0);
+  }
+  .tablinks:hover {
+    color: white;
+  }
+  .active {
+    color: white;
+  }
+  /* Вміст вкладки */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .default {
+    display: block;
+  }
