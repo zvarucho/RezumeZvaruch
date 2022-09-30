@@ -400,7 +400,9 @@ text-align: center;
   .tab button:hover {
     background-color: rgb(84, 251, 0);;
   }
-  
+  .tab .default-tab {
+    background-color: green;
+  }
   /* Активна вкладка */
   .tab button.active {
     background-color:   #0d9a35;
