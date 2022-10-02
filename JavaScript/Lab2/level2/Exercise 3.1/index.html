@@ -1,0 +1,44 @@
+<!-- Створити форму, яка матиме три елементи: поле введення з проханням ввести
+ім'я, при введенні якого в рядку стану повинні з'явитися слова: "Впишіть сюди своє
+ім'я"; два поля для прапорців з питанням про те, що більше подобається
+користувачеві, морозиво або шоколад, які повинні відіслати в рядок стану слова :
+"Ви обрали ..." і вибір користувача; кнопку відправки даних, при натисненні на
+яку повинно вискочити вікно попередження, що дякує користувачеві за участь в
+опитуванні-->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvaruchovuch PI-19-02</title>
+</head>
+<body>
+    <form style="text-align: center;">
+        <p>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="user_name">
+        </p>
+        <p><label for="taste">Що вам більше подобається: </label></p>
+        <p>
+            <input type="radio" name="taste" value="Морозиво" onclick="chooseTaste()">Морозиво
+            <input type="radio" name="taste" value="Шоколад" onclick="chooseTaste()">Шоколад
+        </p>
+        <p><input type="submit" value="Відправити" onclick="goodBye()"></p>
+    </form>
+    <script>
+        let myform = document.forms[0];
+        myform.elements.user_name.placeholder = "Впишіть сюди своє ім'я";
+
+        function chooseTaste()  {
+            let myTaste = myform.elements.taste.value;
+            window.status = "Ви обрали " + myTaste + "!";
+            alert("Ви обрали " + myTaste + "!");
+        }
+
+        function goodBye()  {
+            alert("Дякуємо за участь в опитуванні!");
+        }
+    </script>
+</body>
+</html>
