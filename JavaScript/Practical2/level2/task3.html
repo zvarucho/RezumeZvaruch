@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зваричович Олександр ПІ-19-02</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .text-box {
+            display: flex;
+            font-size: 24px;
+            width: 220px;
+            text-align: center;
+            padding: 18px;
+            color: rgb(248, 248, 248);
+            background-color: black;
+            margin: 0 auto;
+        }
+        input {
+            display: flex;
+            font-size: 16px;
+            padding: 5px;
+            margin: 15px auto;
+            font-family: inherit;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box"></div>
+    <p>Введіть сюди щось своє</p>
+    <p>(оновлення 5сек)</p>
+    <script language="JavaScript">
+                const text = ['--ОГОЛОШЕННЯ!--','Ви щасливі!',];
+
+        function typeText(){
+            let line = 0;
+            let count = 0;
+            let out = '';
+            let htmlOut = document.querySelector('.text-box');
+
+            function typeLine(){
+                let interval = setTimeout(function () {
+                    out += text[line][count];
+                    htmlOut.innerHTML = out + "|";
+                    count++;
+
+                    if (count >= text[line].length) {
+                        count = 0;
+                        line++;
+                        if (line == text.length) {
+                            clearTimeout(interval);
+                            htmlOut.innerHTML = out;
+                            return true;
+                        }
+                    }
+                    typeLine();
+                }, getRandomNum(getRandomNum(200 * 3)));
+            }
+            typeLine();
+        }
+
+        typeText();
+
+        function getRandomNum(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        const input = document.createElement('input');
+        let interval = 0;
+
+        document.body.append(input);
+
+        input.addEventListener('keypress', () => {
+            clearTimeout(interval);
+            interval = setTimeout(() => {
+                text[1] = input.value;
+                typeText();
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

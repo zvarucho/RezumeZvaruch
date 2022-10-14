@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto Mono', monospace;;
+    background-image: url(https://isport.ua/i/68/47/86/3/6847863/image_main/05520cd75f12e4a920eca8ef0ffa9564-quality_70Xresize_1Xallow_enlarge_0Xw_835Xh_0.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: azure;
+}
+.content-wrapper {
+    position: relative;
+    margin: 200px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+    width: 500px;
+    height: auto;
+    background-image: url(https://borgexpert.com/wp-content/uploads/2022/06/Parimatch.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.content-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+.content {
+    position: relative;
+    z-index: 3;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+input {
+    display: flex;
+    margin: 0 auto;
+    min-width: 250px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 3px;
+    border: 3px solid rgb(216, 236, 32);
+}
+p {
+    font-size: 16px;
+    text-align: center;
+}
+.submit {
+    display: flex;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px auto;
+    color: white;
+    border-color: rgb(225, 239, 27);
+    background: linear-gradient(rgb(13, 13, 13), rgb(76, 84, 5));
+    font-family: inherit;
+}
+.submit:hover {
+    color: rgb(205, 225, 21);
+    background: rgb(7, 7, 7);
+    cursor: pointer;
+}
