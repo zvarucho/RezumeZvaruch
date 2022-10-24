@@ -1,0 +1,77 @@
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/* Стиль вкладок */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Стиль кнопок всередині табів */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Зміна кольору пр наводці */
+  .tab button:hover {
+    background-color: rgb(84, 251, 0);;
+  }
+  
+  /* Активна вкладка */
+  .tab button.active {
+    background-color:   #0d9a35;
+  }
+  .tablinks {
+    color: rgb(0, 0, 0);
+  }
+  .tablinks:hover {
+    color: white;
+  }
+  .active {
+    color: white;
+  }
+  /* Вміст вкладки */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .default {
+    display: block;
+  }
+  .btns{ 
+    display: inline-block;
+    cursor: pointer;
+    background-color: #0d9a35;
+    color: #fff;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+  .btns  {
+    color: #f8f8f8; /* Колір звичайного посилання */ 
+    text-decoration: none; /* Забираємо підчеркування */
+   }
+   .btns:visited {
+    color: #ffffff; 
+   } 
+   .btns:hover {
+    background-color: rgb(84, 251, 0);
+    color: #000000; /* Колір посилання після наведення*/ 
+    text-decoration: none; /* Добавляємо підчеркування */
+    -webkit-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+   }
