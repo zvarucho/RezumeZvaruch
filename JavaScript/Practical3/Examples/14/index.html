@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зваричович Олександр ПІ-19-02</title>
+    <style>
+        #blueRect {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+   <div id="blueRect"></div>
+    <script>
+        function moveRect(e) {
+            var blueRect = document.getElementById("blueRect");
+            //отримуємо стиль для blueRect
+            var cs = window.getComputedStyle(blueRect);
+            
+            var left = parseInt(cs.marginLeft);
+            var top = parseInt(cs.marginTop);
+
+            switch(e.keyCode) {
+                case 37:
+                    if(left > 0) 
+                        blueRect.style.marginLeft = left - 10 + "px";
+                    break;
+                case 38: 
+                    if(top > 0)
+                        blueRect.style.marginTop = top - 10 + "px";
+                    break;
+                case 39:
+                    if(left < document.documentElement.clientWidth - 100);
+                        blueRect.style.marginLeft = left + 10 + "px";
+                    break;
+                case 40:
+                    if(top < document.documentElement.clientHeight - 100);
+                        blueRect.style.marginTop = top + 10 + "px";
+                    break;
+            }
+        }
+        addEventListener("keydown", moveRect);
+    </script>
+</body>
+</html>
