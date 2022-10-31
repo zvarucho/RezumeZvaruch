@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зваричович Олександр ПІ-19-02</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Total score: <span id="correct-score"></span> from <span id="total-score">10</span></h2>
+        <button id="next-task">Next task</button>
+
+        <div class="gameField">
+            <h3><span id="firstNum"></span> x <span id="secondNum"></span> =</h3>
+            <div>
+            <input type="radio" name="answer" value="-1922" id="choice1">
+            <label for="choice1">-1922</label>
+
+            <input type="radio" name="answer" value="12476" id="choice2">
+            <label for="choice2">12476</label>
+
+            <input type="radio" name="answer" value="other" id="choice3">
+            <label for="choice3">don't have a correct answer</label>
+        </div>
+        <button id="check-btn">Check</button>
+        </div>
+            <p>Wrong, right answer is <span id="correct-answer"></span></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
