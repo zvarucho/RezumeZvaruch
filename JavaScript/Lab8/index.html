@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Зваричович Олександр ПІ-19-02</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="tabs">
+            <div class="tab whiteborder">Tab1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+            <div class="tabContent">    
+                    <div class="block1">
+                        <h3>Border radius</h3>
+                        <div>
+                            <p>Верхній лівий радіус:</p>
+                            <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+                            <input type="text" id="ttl" value="0">
+                        </div>
+                        <div>
+                            <p>Верхній правий радіус:</p>
+                            <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+                            <input type="text" id="ttr" value="0">
+                        </div>
+                        <div>
+                            <p>Нижній правий радіус:</p>
+                            <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+                            <input type="text" id="tbr" value="0">
+                        </div>
+                        <div>
+                            <p>Нижній лівий радіус:</p>
+                            <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+                            <input type="text" id="tbl" value="0">
+                        </div>
+                    </div>
+                    <div class="footer-block">
+                        <div id="block"></div>
+                        <div class="code">
+                            <p>Code:</p>
+                            <textarea name="output" id="output" cols="40" rows="3">border-radius: 0px</textarea>
+                        </div>
+                    </div>
+            </div>
+            <div class="tabContent">
+                <h3>Float</h3>
+                <div class="block2">
+                        <div>
+                            <input type="radio" id="left" name="float" value="left" oninput="generate2()" checked>
+                            <label for="left">left</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="right" name="float" value="right" oninput="generate2()">
+                            <label for="right">right</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="none" name="float" value="none" oninput="generate2()">
+                            <label for="none">none</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="inherit" name="float" value="inherit" oninput="generate2()">
+                            <label for="inherit">inherit</label>
+                        </div>
+                </div>
+                <div id="footer-block2">
+                    <div id="layer1">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+                        euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                    </div>
+                    <div>
+                        Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel 
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio 
+                        dignissim qui blandit praesent luptatum zzril delenit au gue duis dolore te 
+                        feugat nulla facilisi.
+                    </div>
+                </div>
+                <div class="code">
+                    <p>Code:</p>
+                    <textarea name="output2" id="output2" cols="40" rows="3">float: left</textarea>
+                </div>
+            </div>
+            <div class="tabContent">
+                <h3>Font-family</h3>
+                <div class="block3">
+                    <div class="input">
+                        <p>Введіть назву шрифта:</p>
+                        <input type="text" id="font-family" value="Arial, Helvetica Neue, Helvetica" oninput="generate3()">
+                    </div>
+                    <div>
+                        <input type="radio" id="serif" name="font-family" value="serif" oninput="generate3()" checked>
+                        <label for="serif">serif</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="sans-serif" name="font-family" value="sans-serif" oninput="generate3()">
+                        <label for="sans-serif">sans-serif</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="cursive" name="font-family" value="cursive" oninput="generate3()">
+                        <label for="cursive">cursive</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="fantasy" name="font-family" value="fantasy" oninput="generate3()">
+                        <label for="fantasy">fantasy</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="monospace" name="font-family" value="monospace" oninput="generate3()">
+                        <label for="monospace">monospace</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="inherit" name="font-family" value="inherit" oninput="generate3()">
+                        <label for="inherit">inherit</label>
+                    </div>
+            </div>
+            <div id="footer-block3">
+            <p id="paragraph">
+                Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel 
+                illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio 
+                dignissim qui blandit praesent luptatum zzril delenit au gue duis dolore te 
+                feugat nulla facilisi.
+            </p>
+        </div>
+        <div class="code">
+            <p>Code:</p>
+            <textarea name="output3" id="output3" cols="40" rows="3">font-family: Arial, Helvetica Neue, Helvetica, sans-serif</textarea>
+        </div>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
