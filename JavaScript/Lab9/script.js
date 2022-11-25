@@ -1,6 +1,7 @@
     let products = [{name:"Ліхтар EMOS P2311", price:1439, img:"img/Emos_p4526.jpg"},{name:"NEO", price:1690, img:"img/neo.jpg"}, {name:"VOREL 88674", price:417, img:"img/vorel.png"}, {name:"Emos P4526", price:1899, img:"img/emos.webp"}]
     let cartProducts = []
-    if(document.title == 'Document'){
+    if(document.title == 'SHOP
+       '){
         products.map((product)=>{
             document.write(`<div class="box">
                             <div class="top_block">
