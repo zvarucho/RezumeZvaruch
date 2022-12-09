@@ -1,13 +1,13 @@
-    let products = [{name:"Ліхтар EMOS P2311", price:1439, img:"img/Emos_p4526.jpg"},{name:"NEO", price:1690, img:"img/neo.jpg"}, {name:"VOREL 88674", price:417, img:"img/vorel.png"}, {name:"Emos P4526", price:1899, img:"img/emos.webp"}]
+    let products = [{name:"Samsung A11", price:1439, img:"img/Emos_p4526.jpg"},{name:"iPhone", price:1690, img:"img/neo.jpg"}, {name:"OpenPlus", price:417, img:"img/vorel.png"}, {name:"Redmi Note 9", price:1899, img:"img/emos.webp"}]
     let cartProducts = []
     if(document.title == 'SHOP'){
         products.map((product)=>{
             document.write(`<div class="box">
                             <div class="top_block">
-                                <p><a href="#">ЛІХТАРІ</a></p>
+                                <p><a href="#">Телефони</a></p>
                             </div>
                             <div class="midll_block">
-                                <img src="./img/neo.jpg">
+                                <img src="./img/mobile-phone.jpg">
                                 <a href="https://rozetka.com.ua/fonari-i-aksessuary/c85432/tegi127849=nedorogie/">
                                     <p>${product.name}</p>
                                 </a>
